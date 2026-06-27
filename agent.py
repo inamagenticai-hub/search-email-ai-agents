@@ -8,10 +8,10 @@ from langgraph.prebuilt import create_react_agent
 load_dotenv()
 
 # ============================================
-# 1. LLM Setup - Confirmed Working Model
+# 1. LLM Setup
 # ============================================
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    model="llama-3.1-70b-versatile",
     api_key=os.getenv("GROQ_API_KEY"),
     temperature=0
 )
